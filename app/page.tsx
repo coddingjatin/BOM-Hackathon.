@@ -61,12 +61,8 @@ export default function HomePage() {
         style={{ backgroundColor: scrollY > 50 ? "rgba(0,0,0,0.3)" : "rgba(0,0,0,0.1)" }}
       >
         <div className="container mx-auto px-4 py-4 flex justify-between items-center">
-          <div className="flex items-center gap-4">
-            <img src="/coep-logo.png" alt="COEP Logo" className="w-10 h-10" />
-            <div className="text-2xl font-bold text-white">
-              BOM <span className="text-cyan-400">Hackathon</span> 2025
-            </div>
-            <img src="/bom-logo.png" alt="Bank of Maharashtra Logo" className="w-10 h-10" />
+          <div className="text-2xl font-bold text-white">
+            <span className="text-cyan-400">FINSPARK</span> 2025
           </div>
 
           <div className="hidden md:flex space-x-8">
@@ -146,14 +142,18 @@ export default function HomePage() {
       <section className="pt-32 pb-20 px-4 relative">
         <div className="container mx-auto text-center relative z-10">
           <div className="mb-12 animate-fade-in-up">
-            <Badge className="mb-6 bg-gradient-to-r from-purple-500/20 to-pink-500/20 text-white border border-purple-500/30 px-6 py-3 text-lg backdrop-blur-sm animate-pulse">
+            <Badge className="mb-6 bg-gradient-to-r from-purple-900/80 to-purple-800/80 text-purple-200 border border-purple-700/50 px-6 py-3 text-lg backdrop-blur-sm animate-pulse shadow-lg shadow-purple-900/20">
               36-Hour Innovation Challenge
             </Badge>
 
+            <div className="mb-4">
+              <Badge className="mb-4 bg-gradient-to-r from-amber-900/80 to-yellow-800/80 text-amber-200 border border-amber-700/50 px-6 py-3 text-xl backdrop-blur-sm shadow-lg shadow-amber-900/20">
+                PSBs Hackathon Series 2025
+              </Badge>
+            </div>
             <h1 className="text-6xl md:text-8xl font-bold text-white mb-8 leading-tight">
-              <span className="inline-block animate-slide-in-left">BOM</span>{" "}
-              <span className="text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-blue-600 inline-block animate-slide-in-right">
-                Hackathon
+              <span className="text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-blue-600 inline-block animate-slide-in-left">
+                FINSPARK
               </span>
               <br />
               <span className="text-5xl md:text-7xl text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-pink-600 inline-block animate-bounce-in">
@@ -260,6 +260,100 @@ export default function HomePage() {
         </div>
       </section>
 
+      {/* Organizers Section */}
+      <section className="py-20 px-4 bg-black/10 relative">
+        <div className="container mx-auto">
+          <div className="text-center mb-16">
+            <h2 className="text-5xl font-bold text-white mb-6">Organized By</h2>
+            <p className="text-xl text-gray-300">
+              In collaboration with leading financial institutions and government bodies
+            </p>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 max-w-6xl mx-auto items-center">
+            <div className="bg-white/5 backdrop-blur-xl rounded-2xl p-8 border border-white/10 hover:bg-white/10 hover:border-cyan-500/30 transition-all duration-500 hover:scale-110 group animate-fade-in-up relative overflow-hidden">
+              <div className="absolute inset-0 bg-gradient-to-br from-cyan-500/5 to-blue-500/5 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+              <div className="flex flex-col items-center relative z-10">
+                <div className="bg-white/10 rounded-full p-4 mb-6 group-hover:bg-white/20 transition-colors duration-300">
+                  <img
+                    src="/iba-logo-new.png"
+                    alt="Indian Banks' Association - Leading banking industry body since 1946, representing public and private sector banks across India"
+                    className="w-16 h-16 group-hover:scale-110 transition-transform duration-300"
+                    loading="lazy"
+                  />
+                </div>
+                <p className="text-white text-center text-lg font-semibold">Indian Banks' Association</p>
+                <p className="text-gray-400 text-center text-sm mt-2">Since 1946</p>
+                <div className="mt-4 text-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                  <p className="text-cyan-300 text-xs">Banking Industry Leadership</p>
+                  <p className="text-gray-400 text-xs">Representing 200+ Banks</p>
+                </div>
+              </div>
+            </div>
+
+            <div className="bg-white/5 backdrop-blur-xl rounded-2xl p-8 border border-white/10 hover:bg-white/10 hover:border-purple-500/30 transition-all duration-500 hover:scale-110 group animate-fade-in-up delay-200 relative overflow-hidden">
+              <div className="absolute inset-0 bg-gradient-to-br from-purple-500/5 to-pink-500/5 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+              <div className="flex flex-col items-center relative z-10">
+                <div className="bg-white/10 rounded-full p-4 mb-6 group-hover:bg-white/20 transition-colors duration-300">
+                  <img
+                    src="/dfs-logo-new.png"
+                    alt="Department of Financial Services - Government of India ministry overseeing banking, insurance, and financial sector policies"
+                    className="w-16 h-16 group-hover:scale-110 transition-transform duration-300"
+                    loading="lazy"
+                  />
+                </div>
+                <p className="text-white text-center text-lg font-semibold">Department of Financial Services</p>
+                <p className="text-gray-400 text-center text-sm mt-2">Government of India</p>
+                <div className="mt-4 text-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                  <p className="text-purple-300 text-xs">Policy & Regulation</p>
+                  <p className="text-gray-400 text-xs">Financial Sector Oversight</p>
+                </div>
+              </div>
+            </div>
+
+            <div className="bg-white/5 backdrop-blur-xl rounded-2xl p-8 border border-white/10 hover:bg-white/10 hover:border-blue-500/30 transition-all duration-500 hover:scale-110 group animate-fade-in-up delay-400 relative overflow-hidden">
+              <div className="absolute inset-0 bg-gradient-to-br from-blue-500/5 to-cyan-500/5 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+              <div className="flex flex-col items-center relative z-10">
+                <div className="bg-white/10 rounded-full p-4 mb-6 group-hover:bg-white/20 transition-colors duration-300">
+                  <img
+                    src="/bom-logo-updated.png"
+                    alt="Bank of Maharashtra - Public sector bank serving millions of customers across India with innovative banking solutions"
+                    className="w-16 h-16 group-hover:scale-110 transition-transform duration-300"
+                    loading="lazy"
+                  />
+                </div>
+                <p className="text-white text-center text-lg font-semibold">Bank of Maharashtra</p>
+                <p className="text-gray-400 text-center text-sm mt-2">एक परिवार एक बैंक</p>
+                <div className="mt-4 text-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                  <p className="text-blue-300 text-xs">Public Sector Bank</p>
+                  <p className="text-gray-400 text-xs">1935+ Branches</p>
+                </div>
+              </div>
+            </div>
+
+            <div className="bg-white/5 backdrop-blur-xl rounded-2xl p-8 border border-white/10 hover:bg-white/10 hover:border-pink-500/30 transition-all duration-500 hover:scale-110 group animate-fade-in-up delay-600 relative overflow-hidden">
+              <div className="absolute inset-0 bg-gradient-to-br from-pink-500/5 to-purple-500/5 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+              <div className="flex flex-col items-center relative z-10">
+                <div className="bg-white/10 rounded-full p-4 mb-6 group-hover:bg-white/20 transition-colors duration-300">
+                  <img
+                    src="/coep-logo-new.png"
+                    alt="COEP Technological University - Premier engineering institution established in 1854, fostering innovation and excellence in technology education"
+                    className="w-16 h-16 group-hover:scale-110 transition-transform duration-300"
+                    loading="lazy"
+                  />
+                </div>
+                <p className="text-white text-center text-lg font-semibold">COEP Technological University</p>
+                <p className="text-gray-400 text-center text-sm mt-2">Estd. 1854</p>
+                <div className="mt-4 text-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                  <p className="text-pink-300 text-xs">Engineering Excellence</p>
+                  <p className="text-gray-400 text-xs">170+ Years Legacy</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Themes Section */}
       <section id="themes" className="py-20 px-4 bg-black/20 relative">
         <div className="container mx-auto">
@@ -305,8 +399,8 @@ export default function HomePage() {
               <CardContent>
                 <CardDescription className="text-gray-300 text-lg leading-relaxed">
                   Build intelligent systems that can automatically analyse all types of logs including security logs,
-  event logs and detect potential threats. Leverage AI/ML to enhance cyber security monitoring and
-  response capabilities in real time.
+                  event logs and detect potential threats. Leverage AI/ML to enhance cyber security monitoring and
+                  response capabilities in real time.
                 </CardDescription>
               </CardContent>
             </Card>
@@ -514,8 +608,8 @@ export default function HomePage() {
                 <Award className="w-20 h-20 text-yellow-400 mx-auto mb-6 animate-pulse" />
                 <CardTitle className="text-4xl text-white mb-4">Internship Opportunities</CardTitle>
                 <p className="text-xl text-gray-300 leading-relaxed">
-                Top-performing teams stand a chance to receive internship opportunities at Bank of Maharashtra,
-  working on real-world projects that impact million of users.
+                  Top-performing teams stand a chance to receive internship opportunities at Bank of Maharashtra,
+                  working on real-world projects that impact million of users
                 </p>
               </CardHeader>
               <CardContent>
@@ -560,12 +654,13 @@ export default function HomePage() {
         <div className="container mx-auto">
           <div className="flex flex-col md:flex-row justify-between items-center gap-8">
             <div className="text-center md:text-left">
-              <div className="flex items-center gap-4 justify-center md:justify-start mb-4">
-                <img src="/coep-logo.png" alt="COEP Logo" className="w-12 h-12" />
-                <h3 className="text-2xl font-bold text-white">BOM Hackathon 2025</h3>
-                <img src="/bom-logo.png" alt="Bank of Maharashtra Logo" className="w-12 h-12" />
+              <div className="flex items-center justify-center md:justify-start mb-4">
+                <h3 className="text-2xl font-bold text-white">FINSPARK 2025</h3>
               </div>
-              <p className="text-gray-400 text-lg">COEP Technological University × Bank of Maharashtra</p>
+              <p className="text-gray-400 text-lg">PSBs Hackathon Series 2025</p>
+              <p className="text-gray-500 text-sm mt-1">
+                IBA × DFS × Bank of Maharashtra × COEP Technological University
+              </p>
             </div>
             <div className="text-center md:text-right">
               <p className="text-gray-400 text-lg mb-2">Registration opens soon!</p>
@@ -652,6 +747,18 @@ export default function HomePage() {
 
         .delay-1000 {
           animation-delay: 1s;
+        }
+
+        .delay-200 {
+          animation-delay: 0.2s;
+        }
+
+        .delay-400 {
+          animation-delay: 0.4s;
+        }
+
+        .delay-600 {
+          animation-delay: 0.6s;
         }
       `}</style>
     </div>
