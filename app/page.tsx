@@ -162,7 +162,7 @@ export default function HomePage() {
             </h1>
 
             <p className="text-xl md:text-2xl text-gray-300 mb-12 max-w-4xl mx-auto animate-fade-in-up delay-500">
-              Join COEP Technological University & Bank of Maharashtra for an epic 36-hour coding marathon that will
+              Join Bank of Maharashtra & COEP Technological University for an epic 36-hour coding marathon that will
               reshape the future of FinTech and Cybersecurity
             </p>
           </div>
@@ -304,8 +304,9 @@ export default function HomePage() {
               </CardHeader>
               <CardContent>
                 <CardDescription className="text-gray-300 text-lg leading-relaxed">
-                  Build intelligent systems that can automatically analyze security logs and detect potential threats.
-                  Leverage AI/ML to enhance cybersecurity monitoring and response capabilities in real-time.
+                  Build intelligent systems that can automatically analyse all types of logs including security logs,
+  event logs and detect potential threats. Leverage AI/ML to enhance cyber security monitoring and
+  response capabilities in real time.
                 </CardDescription>
               </CardContent>
             </Card>
@@ -513,8 +514,8 @@ export default function HomePage() {
                 <Award className="w-20 h-20 text-yellow-400 mx-auto mb-6 animate-pulse" />
                 <CardTitle className="text-4xl text-white mb-4">Internship Opportunities</CardTitle>
                 <p className="text-xl text-gray-300 leading-relaxed">
-                  Top-performing teams will receive exclusive internship opportunities at Bank of Maharashtra, working
-                  on real-world projects that impact millions of users
+                Top-performing teams stand a chance to receive internship opportunities at Bank of Maharashtra,
+  working on real-world projects that impact million of users.
                 </p>
               </CardHeader>
               <CardContent>
