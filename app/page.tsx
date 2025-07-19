@@ -326,7 +326,7 @@ export default function HomePage() {
                 <p className="text-gray-400 text-center text-sm mt-2">एक परिवार एक बैंक</p>
                 <div className="mt-4 text-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                   <p className="text-blue-300 text-xs">Public Sector Bank</p>
-                  <p className="text-gray-400 text-xs">1935+ Branches</p>
+                  <p className="text-gray-400 text-xs">2600+ Branches</p>
                 </div>
               </div>
             </div>
